@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    background-color: rgb(66, 66, 92);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    margin: 100px auto;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.slider-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+
+.slider-box .slider {
+    height: 100%;
+    white-space: nowrap;
+    font-size: 0;
+    transition: 0.8s;
+}
+
+.slider-box .slider>* {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+#s1:target~.slider {
+    transform: translateX( 0%);
+}
+
+#s2:target~.slider {
+    transform: translateX(-100%);
+}
+
+#s3:target~.slider {
+    transform: translateX(-200%);
+}
+
+#s4:target~.slider {
+    transform: translateX(-300%);
+}
+
+.slider-box .prevNext {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 100%;
+    height: 0;
+}
+
+.slider-box .prevNext a {
+    background: #fff;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    opacity: 0.7;
+    text-decoration: none;
+    transform: translateY( -50%);
+}
+
+.slider-box .prevNext a:hover {
+    opacity: 1;
+}
+
+.slider-box .prevNext a+a {
+    right: 0px;
+}
+
+.slider-box .bullets {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.slider-box .bullets>a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 1);
+}
+
+.slider-box .bullets>a+a {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.slider-box>s:target~.bullets>* {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#s1:target~.bullets>*:nth-child(1) {
+    background: rgba(255, 255, 255, 1);
+}
+
+#s2:target~.bullets>*:nth-child(2) {
+    background: rgba(255, 255, 255, 1);
+}
+
+#s3:target~.bullets>*:nth-child(3) {
+    background: rgba(255, 255, 255, 1);
+}
+
+#s4:target~.bullets>*:nth-child(4) {
+    background: rgba(255, 255, 255, 1);
+}
+
+.slider-box>s:target~.prevNext>* {
+    visibility: hidden;
+}
+
+#s1:target~.prevNext>*:nth-child(1) {
+    visibility: visible;
+}
+
+#s2:target~.prevNext>*:nth-child(2) {
+    visibility: visible;
+}
+
+#s3:target~.prevNext>*:nth-child(3) {
+    visibility: visible;
+}
+
+#s4:target~.prevNext>*:nth-child(4) {
+    visibility: visible;
+}
+
+.about {
+    display: block;
+    color: rgb(141, 139, 139);
+    text-align: center;
+    margin: 20px auto;
+}
