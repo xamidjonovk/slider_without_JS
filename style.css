@@ -60,7 +60,7 @@ h1 {
     height: 0;
 }
 
-.CSSgal .prevNext>div+div {
+.slider-box .prevNext>div+div {
     visibility: hidden;
     /* Hide all but first P/N container */
 }
