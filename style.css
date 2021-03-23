@@ -60,6 +60,11 @@ h1 {
     height: 0;
 }
 
+.CSSgal .prevNext>div+div {
+    visibility: hidden;
+    /* Hide all but first P/N container */
+}
+
 .slider-box .prevNext a {
     background: #fff;
     position: absolute;
