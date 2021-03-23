@@ -39,21 +39,25 @@ h1 {
 #s1:target~.slider {
     transform: translateX( 0%);
     -webkit-transform: translateX( 0%);
+    -ms-transform: translateX( 0%);
 }
 
 #s2:target~.slider {
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
 }
 
 #s3:target~.slider {
     transform: translateX(-200%);
     -webkit-transform: translateX(-200%);
+    -ms-transform: translateX(-200%);
 }
 
 #s4:target~.slider {
     transform: translateX(-300%);
     -webkit-transform: translateX(-300%);
+    -ms-transform: translateX(-300%);
 }
 
 .slider-box .prevNext {
@@ -80,6 +84,7 @@ h1 {
     text-decoration: none;
     transform: translateY( -50%);
     -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
 }
 
 .slider-box .prevNext a:hover {
